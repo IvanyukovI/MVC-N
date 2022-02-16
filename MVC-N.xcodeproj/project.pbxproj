@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4F583F27BD362000E86633 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F583E27BD362000E86633 /* NetworkService.swift */; };
+		5D4F584227BD396C00E86633 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F584127BD396C00E86633 /* CommentNetworkService.swift */; };
+		5D4F584427BD3AAA00E86633 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F584327BD3AAA00E86633 /* GetCommentResponse.swift */; };
+		5D4F584727BD3C1F00E86633 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F584627BD3C1F00E86633 /* NetworkError.swift */; };
 		5DE5C65827BBFAFC00A1E90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5C65727BBFAFC00A1E90D /* AppDelegate.swift */; };
 		5DE5C65A27BBFAFC00A1E90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5C65927BBFAFC00A1E90D /* SceneDelegate.swift */; };
 		5DE5C65C27BBFAFC00A1E90D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE5C65B27BBFAFC00A1E90D /* CommentsViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D4F583E27BD362000E86633 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5D4F584127BD396C00E86633 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		5D4F584327BD3AAA00E86633 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		5D4F584627BD3C1F00E86633 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5DE5C65427BBFAFC00A1E90D /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE5C65727BBFAFC00A1E90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DE5C65927BBFAFC00A1E90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D4F583D27BD35E500E86633 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				5D4F583E27BD362000E86633 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		5D4F584027BD391400E86633 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				5D4F584127BD396C00E86633 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		5D4F584527BD3B6A00E86633 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				5D4F584327BD3AAA00E86633 /* GetCommentResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		5DE5C64B27BBFAFC00A1E90D = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +95,7 @@
 			children = (
 				5DE5C66E27BBFE9500A1E90D /* Application */,
 				5DE5C66F27BBFED400A1E90D /* Comments */,
+				5D4F584027BD391400E86633 /* CommentNetworkService */,
 				5DE5C67327BC007B00A1E90D /* Supporting files */,
 			);
 			path = "MVC-N";
@@ -71,6 +104,7 @@
 		5DE5C66B27BBFDFF00A1E90D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D4F584627BD3C1F00E86633 /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +131,7 @@
 				5DE5C66B27BBFDFF00A1E90D /* Model */,
 				5DE5C66C27BBFE1300A1E90D /* View */,
 				5DE5C66D27BBFE2200A1E90D /* Controller */,
+				5D4F583D27BD35E500E86633 /* NetworkService */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -132,6 +167,7 @@
 		5DE5C67227BBFF0000A1E90D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D4F584527BD3B6A00E86633 /* Responses */,
 				5DE5C67627BC113700A1E90D /* Comment.swift */,
 			);
 			path = Model;
@@ -221,7 +257,11 @@
 				5DE5C65C27BBFAFC00A1E90D /* CommentsViewController.swift in Sources */,
 				5DE5C65827BBFAFC00A1E90D /* AppDelegate.swift in Sources */,
 				5DE5C65A27BBFAFC00A1E90D /* SceneDelegate.swift in Sources */,
+				5D4F583F27BD362000E86633 /* NetworkService.swift in Sources */,
+				5D4F584427BD3AAA00E86633 /* GetCommentResponse.swift in Sources */,
+				5D4F584727BD3C1F00E86633 /* NetworkError.swift in Sources */,
 				5DE5C67527BC0ACD00A1E90D /* CommentCell.swift in Sources */,
+				5D4F584227BD396C00E86633 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
